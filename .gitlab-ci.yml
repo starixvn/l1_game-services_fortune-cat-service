@@ -1,0 +1,11 @@
+variables:
+  SMOKE_PRODUCT_NAME: FortuneCat
+  
+include:
+  - project: "ci/repos-ci/pentagon_l1_fortune_cat_service"
+    ref: master
+    file: "gitlab-ci.yml"
+
+  - project: "ci/repos-ci/pentagon_l2_fortune_cat_service"
+    ref: master
+    file: "gitlab-ci-mixing.yml"
