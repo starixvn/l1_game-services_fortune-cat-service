@@ -11,7 +11,7 @@ export default {
 
         useAuthenticate: true,
         requestTimeout: 10000,
-        placeBetTimeout: 4500,
+        placeBetTimeout: 4000,
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
@@ -51,6 +51,6 @@ export default {
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
     corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l2-games1.lumigame.com", "https://l2-admin1.lumigame.com"],
-    freeSpinLiveSeconds: 600, // 1 day
+    freeSpinLiveSeconds: 180, // 1 day
     bonusLiveSeconds: 123,
 };
