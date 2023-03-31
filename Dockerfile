@@ -1,4 +1,4 @@
-FROM registry.nexdev.net:5050/docker/node:18.1-slim
+FROM hub.lumigame.com/base/node:18.1-slim
 
 ARG NODE_ENV=production
 ENV NODE_ENV $NODE_ENV
