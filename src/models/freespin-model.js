@@ -1,5 +1,18 @@
 import mongoose from "mongoose";
-import { Models } from "sc-slot-game-base";
 import gameSettings from "../game-settings";
 
-export default mongoose.model(`${gameSettings.name}_freespin`, Models.FreeSpinsSchema);
+const freeSpinSchema = new mongoose.Schema({
+    id: { type: Number, required: true },
+    uid: { type: String, required: true },
+    name: { type: String, required: true },
+    roundId: { type: Number, required: true },
+    bet: { type: Number, required: true },
+    paylines: { type: [Number], required: true },
+    total: { type: Number, required: true },
+    available: { type: Number, default: 0 },
+    time: { type: Date, required: true },
+    expiryTime: { type: Date, required: true },
+    playerId: { type: String, required: true },
+});
+
+export default mongoose.model(`${gameSettings.name}_freespin`, freeSpinSchema);
