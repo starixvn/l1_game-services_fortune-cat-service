@@ -33,7 +33,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://bfcba2ed6dbc4d4193bba01981b2812d@sentryuat.sabagame.com/19",
+        sentryUrl: "https://50e405ebce7003a0e1edbda2bf28b14c@sentry-k8s.lumigame.com/3",
         logIdentifier: "fortune-cat",
         env: "LOCAL_2",
     },
