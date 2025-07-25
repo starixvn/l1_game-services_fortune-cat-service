@@ -1,0 +1,53 @@
+export default {
+    hostingPort: 5000,
+    apiSettings: {
+        enabledApi: true,
+        apiUrl: "http://l2_game_api_sit:5000",
+        authUrl: "http://l2_auth_api_sit:5000",
+        client: {
+            id: "game-server",
+            secret: "gameserver@20luminet&",
+        },
+        useAuthenticate: true,
+        requestTimeout: 10000,
+        placeBetTimeout: 4000,
+        hitJackpotTimeout: 200000,
+        enabledApiLogs: true,
+    },
+    socketOptions: {
+        pingInterval: 60 * 1000,
+        pingTimeout: 60 * 1000,
+        transports: ["websocket"],
+        allowUpgrades: false,
+        perMessageDeflate: false,
+    },
+    enabledLogs: true,
+    database: {
+        url: "mongodb://lmn_backend:LmnBackend%40517@172.16.4.111:32301/?replicaSet=SabaL2SIT&appName=FortuneCat",
+        options: {
+            dbName: "minigame",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        },
+    },
+    sentry: {
+        sentryUrl: "http://8ac47fca6d3e4a41908896a64ef201ac@10.2.190.51:9009/53",
+        logIdentifier: "fortune-cat",
+        env: "SIT_1",
+    },
+    authenticateSettings: {
+        url: "http://l2_auth_api_sit:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: true,
+        audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://l2_user_service_sit:5000",
+    },
+    adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
+    freeSpinLiveSeconds: 600, // 1 day
+    bonusLiveSeconds: 123,
+    enableMsgpackParser: true,
+};
