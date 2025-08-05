@@ -2527,6 +2527,11 @@ chance@^1.1.7:
   resolved "http://npm.lumigame.com/chance/-/chance-1.1.9.tgz#fbf409726a956415b4bde0e8db010f60b60fc01b"
   integrity sha512-TfxnA/DcZXRTA4OekA2zL9GH8qscbbl6X0ZqU4tXhGveVY/mXWvEQLt5GwZcYXTEyEFflVtj+pG8nc8EwSm1RQ==
 
+chance@^1.1.9:
+  version "1.1.13"
+  resolved "http://npm.lumigame.com/chance/-/chance-1.1.13.tgz#d4ecfd20c5e6799aaf5c2270d7653b32385cd6e3"
+  integrity sha512-V6lQCljcLznE7tUYUM9EOAnnKXbctE6j/rdQkYOHIWbfGQbrzTsAXNW9CdU5XCo4ArXQCj/rb6HgxPlmGJcaUg==
+
 char-regex@^1.0.2:
   version "1.0.2"
   resolved "http://npm.lumigame.com/char-regex/-/char-regex-1.0.2.tgz#d744358226217f981ed58f479b1d6bcc29545dcf"
@@ -4877,7 +4882,7 @@ lodash.once@^4.0.0:
   resolved "http://npm.lumigame.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
-lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "http://npm.lumigame.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6110,10 +6115,10 @@ sc-base-apis@1.18.0, sc-base-apis@1.18.2:
     sc-base-database "1.11.1"
     sc-common "1.8.1"
 
-sc-base-database@1.10.1, sc-base-database@1.11.1:
-  version "1.11.1"
-  resolved "http://npm.lumigame.com/sc-base-database/-/sc-base-database-1.11.1.tgz#25d850e83b4e07f7e6e26f3d2d1eecc11145c2cf"
-  integrity sha512-DxuFRNDDSHQglSGFsXnrcDXVs+BRxSiILBNRbJ5RistCcSbs+k7QiwYMGhCSv3FOz9J/On9jh2y3MNst/he2BA==
+sc-base-database@1.10.1, sc-base-database@1.11.1, sc-base-database@1.11.3:
+  version "1.11.3"
+  resolved "http://npm.lumigame.com/sc-base-database/-/sc-base-database-1.11.3.tgz#2195179ed2ed795842fec2dfde77583598692d4c"
+  integrity sha512-XKtljkwuIQBYrfq3DpLrK+UIiUym4ex8Y3cy/CL88b3C0986w6xRo0mrAtUNoxGUury6IiU/uBKe2w4J/oKpfQ==
   dependencies:
     mongoose "^5.9.25"
     sc-common "1.8.1"
@@ -6129,7 +6134,7 @@ sc-common@1.8.1:
     mongoose-long "^0.3.0"
     numeral "^2.0.6"
 
-sc-game-base@3.1.1, sc-game-base@3.3.0:
+sc-game-base@3.3.0, sc-game-base@4.0.0, sc-game-base@4.1.1-beta.57:
   version "3.3.0"
   resolved "http://npm.lumigame.com/sc-game-base/-/sc-game-base-3.3.0.tgz#54bc50bd598c3f06f86fcd5359c85a0af2cbf5f6"
   integrity sha512-T8UpNZV4m6QcSdVfYBOSkTJnns2qmliBuvf9S6x+DV6QxNyaM0dQWaHZE0P+CWceXIWgd7tiA7AiKk8Art7yUg==
@@ -6153,24 +6158,24 @@ sc-game-base@3.1.1, sc-game-base@3.3.0:
     socket.io-msgpack-parser "^3.0.1"
     socket.io-prom-metrics "^1.0.3"
 
-sc-game-service-integration-utils@1.3.3:
-  version "1.3.3"
-  resolved "https://npm.lumigame.com/sc-game-service-integration-utils/-/sc-game-service-integration-utils-1.3.3.tgz#ae74998fb11271f535f567c879c76b08d28de8d1"
-  integrity sha512-lp7ymA0EkYSkRl8LjO72SxwOKFc0OGLtxzRA7AlPztYLYrHEPPGc/crcpunhEU1CZDIbxBOxquM9Mvczd/xnzA==
+sc-game-service-integration-utils@1.3.9:
+  version "1.3.9"
+  resolved "http://npm.lumigame.com/sc-game-service-integration-utils/-/sc-game-service-integration-utils-1.3.9.tgz#f5d336a9c9d6129dd118fac9fbd8a2ab3905bb69"
+  integrity sha512-B9xgdJiycqIEPSNuc1F4TRtmlm1tKrHMRJ2iGf3ucuvggMt9kzVXRINg8O23sRGx7PTJsisHq37SaYUzdZxuiQ==
   dependencies:
     lodash.matches "^4.6.0"
     nock "^13.2.1"
-    sc-game-base "3.1.1"
+    sc-game-base "4.1.1-beta.57"
     socket.io-client "^4.4.0"
 
-sc-slot-game-base@1.6.0:
-  version "1.6.0"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.6.0.tgz#d5ee3ed1a21c3486929381358f0d7841315b0b91"
-  integrity sha512-7wGXSkCejY4DZonH/2uTELuN6Bh1Yq2101YySvlkPE95BCmYjjlfCniYcqE+at4iV6BJqKXhW+BvhRTUfpWRZg==
+sc-slot-game-base@1.7.0:
+  version "1.7.0"
+  resolved "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.7.0.tgz#b583f23a9dc517dd987ffd22e5f7485953537374"
+  integrity sha512-tThXucl0kf8bs+Wv4bmWBkA0gT1Q4aLlrjJ9FDq2NoFRTdbi0rNg0zzhe1pmRtK26OD/rAoKtzp9T5TZdcV6yQ==
   dependencies:
-    chance "^1.1.7"
-    lodash "^4.17.20"
-    sc-game-base "3.3.0"
+    chance "^1.1.9"
+    lodash "^4.17.21"
+    sc-game-base "4.0.0"
 
 semver-compare@^1.0.0:
   version "1.0.0"
